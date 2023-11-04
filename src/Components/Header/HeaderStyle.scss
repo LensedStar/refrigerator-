@@ -6,6 +6,8 @@ $blueTransparent:rgba(102,153,204,.7);
 $blue:rgba(102,153,204,1);
 
 header{
+  position: sticky;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;

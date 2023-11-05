@@ -16,8 +16,7 @@ export default function Brands() {
             <article className="brands__list">
                 <section className="brand brand__viking">
                     <article>
-                    <img className="
-                     viking__logo" src={vikingLogo} alt="viking logo"/>
+                    <img className="logoimg viking__logo" src={vikingLogo} alt="viking logo"/>
                     <ul>
                         <li><img className="dot" src={listDec} alt="list decoration" />All types of refrigerators </li>
                         <li><img className="dot" src={listDec} alt="list decoration" />All types of ovens</li>

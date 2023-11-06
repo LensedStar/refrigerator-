@@ -1,6 +1,7 @@
 .brands {
-  padding: 0 120px;
-  margin: 100px 0;
+  padding: 100px 120px;
+  width: 100%;
+  background-size: cover;
 }
 .brands .brands__title {
   color: #000;
@@ -8,6 +9,7 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  margin: 0;
 }
 .brands .brands__list {
   margin-top: 42px;
@@ -63,6 +65,10 @@
 }
 .brands .brands__list .brand .wolf__logo {
   width: 220px;
+}
+.brands .brands__list .brand .viking__logo {
+  position: relative;
+  right: 20px;
 }
 .brands .brands__list .brand .dot {
   margin-right: 10px;

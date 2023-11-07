@@ -38,6 +38,7 @@
   width: 803px;
   height: 441px;
   flex-shrink: 0;
+  box-shadow: 0 7px 29px 0 rgba(0, 0, 0, 0.25);
 }
 .about__container .about__description__container p {
   color: #000;

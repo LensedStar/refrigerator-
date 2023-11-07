@@ -12,7 +12,7 @@ export default function Header() {
             <a href="#about" className="nav__link">About</a>
             <a href="#contact" className="nav__link">Home</a>
         </nav>
-        <aside>
+        <aside className="contacts__header">
             <article className="head__number">
                 <img src={phoneLogo} alt="phone"/>
                 <a href="tel:+1123456789">+1-123-456-789-456</a>

@@ -1,0 +1,62 @@
+.contact__container {
+  max-width: 1440px;
+  margin: 100px auto;
+  padding: 0 120px;
+}
+.contact__container .contact__title {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.contact__form__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.contact__form__info .contact__info {
+  margin-top: 25px;
+  width: 100%;
+  background-color: rgb(102, 153, 204);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 40px 65px;
+  border-radius: 10px;
+}
+.contact__form__info .contact__info .contact__adress,
+.contact__form__info .contact__info .contact__phone,
+.contact__form__info .contact__info .contact__email {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+.contact__form__info .contact__info .contact__adress img,
+.contact__form__info .contact__info .contact__phone img,
+.contact__form__info .contact__info .contact__email img {
+  height: 40px;
+  width: 40px;
+  margin: 0 30px 0 0;
+}
+.contact__form__info .contact__info .contact__adress a,
+.contact__form__info .contact__info .contact__phone a,
+.contact__form__info .contact__info .contact__email a {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.contact__form__info .contact__info .contact__adress a:hover,
+.contact__form__info .contact__info .contact__phone a:hover,
+.contact__form__info .contact__info .contact__email a:hover {
+  color: rgba(246, 246, 246, 0.5);
+}
+
+/*# sourceMappingURL=ContactStyle.css.map */

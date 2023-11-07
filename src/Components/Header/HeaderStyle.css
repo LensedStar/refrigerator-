@@ -1,12 +1,13 @@
 header {
-  position: sticky;
+  position: fixed;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 120px;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 80px;
+  height: 60px;
+  width: 100%;
 }
 header nav {
   display: flex;
@@ -24,6 +25,15 @@ header nav a {
 }
 header nav a:visited {
   color: #FFF;
+}
+header .contacts__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+header .contacts__header .head__number {
+  margin-right: 25px;
 }
 header .head__number,
 header .head__email {
@@ -50,6 +60,11 @@ header .head__number img,
 header .head__email img {
   position: relative;
   right: 4px;
+}
+header .head__number:hover,
+header .head__email:hover {
+  background-color: rgba(11, 153, 29, 0.4);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=HeaderStyle.css.map */

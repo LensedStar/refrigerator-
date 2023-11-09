@@ -9,14 +9,14 @@
   justify-content: center;
 }
 .form__page .form__input input, .form__page .form__input #message {
-  width: 530px;
-  height: 40px;
+  width: 500px;
+  height: 45px;
   border-radius: 10px;
   border: none;
   background: #FFF;
   box-shadow: 0px 7px 27px 0px rgba(0, 0, 0, 0.25);
   padding: 0 20px;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
 }
 .form__page .form__input input:focus, .form__page .form__input #message:focus {
   outline: rgba(102, 153, 204, 0.7) auto 1px;
@@ -38,16 +38,16 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  max-width: 530px;
+  max-width: 500px;
 }
 .form__page .form__input__submit button {
   border-radius: 10px;
   border: none;
   box-shadow: 0px 7px 27px 0px rgba(0, 0, 0, 0.25);
   padding: 0 20px;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
   width: 50%;
-  height: 40px;
+  height: 45px;
   background-color: rgb(11, 153, 29);
   color: #000000;
   font-size: 20px;
@@ -83,9 +83,9 @@
   background: #FFF;
   box-shadow: 0 7px 27px 0 rgba(0, 0, 0, 0.25);
   padding: 0 20px;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
   width: 30%;
-  height: 40px;
+  height: 45px;
 }
 .form__page .form__input__test input:focus {
   outline: rgba(102, 153, 204, 0.7) auto 1px;

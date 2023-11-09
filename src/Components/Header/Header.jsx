@@ -10,7 +10,7 @@ export default function Header() {
         <nav className="navigation">
             <a href="#brands" className="nav__link">Brands</a>
             <a href="#about" className="nav__link">About</a>
-            <a href="#contact" className="nav__link">Home</a>
+            <a href="#contacts" className="nav__link">Contact</a>
         </nav>
         <aside className="contacts__header">
             <article className="head__number">

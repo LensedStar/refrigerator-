@@ -25,7 +25,7 @@
 }
 .about__container .about__desc img {
   width: 514px;
-  height: 594px;
+  height: 550px;
   flex-shrink: 0;
   position: relative;
   z-index: -1;

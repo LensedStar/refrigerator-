@@ -5,7 +5,7 @@ import AboutPhoto from "../../Images/aboutPhoto.svg";
 
 export default function About() {
     return (
-        <div className="about__container__background">
+        <div className="about__container__background" id="#about">
             <section className="about__container">
             <h1 className="about__title">About us</h1>
             <article className="about__desc">

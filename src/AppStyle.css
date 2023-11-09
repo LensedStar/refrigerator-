@@ -16,4 +16,9 @@ body {
   overflow-x: hidden;
 }
 
+#root {
+  position: relative;
+  z-index: 1;
+}
+
 /*# sourceMappingURL=AppStyle.css.map */

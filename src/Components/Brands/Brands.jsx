@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 
 import "./BrandsStyle.scss";
 
@@ -6,10 +6,14 @@ import vikingLogo from "../../Images/vikingLogo.svg"
 import wolfLogo from "../../Images/wolfLogo.svg"
 import subzLogo from "../../Images/subzLogo.svg"
 import listDec  from "../../Images/listDec.svg"
-
 import Button from "../Button/Button";
 
+import {Modal} from "@mui/material";
+import ModalWindow from "../Modal/ModalWindow";
+
 export default function Brands() {
+    const [open,setOpen] = useState(false);
+    const handleOpen = () => setOpen(!open);
     return (
         <article className="brands" id="brands">
             <h1 className="brands__title">Brands we work with</h1>
@@ -27,9 +31,14 @@ export default function Brands() {
                     <Button property={{
                         width: "254px",
                         height: "61px"
-                    }}>
+                    }}
+                    handleClick={() => {}}
+                    >
                         <h2>Book now</h2>
                     </Button>
+                        <Modal open={true} >
+                            <ModalWindow/>
+                        </Modal>
                     </span>
                 </section>
                 <section className="brand brand__wolf">

@@ -2,6 +2,17 @@
   padding: 100px 120px;
   width: 100%;
   background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  .brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 12px;
+  }
 }
 .brands .brands__title {
   color: #000;
@@ -11,31 +22,70 @@
   line-height: normal;
   margin: 0;
 }
+@media screen and (max-width: 830px) {
+  .brands .brands__title {
+    font-size: 30px;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 830px) {
+  .brands .brands__title {
+    font-size: 25px;
+  }
+}
 .brands .brands__list {
   margin-top: 42px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media screen and (max-width: 1400px) {
+  .brands .brands__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .brands .brands__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .brands .brands__list .brand {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  width: 388.938px;
-  height: 428.329px;
+  width: 389px;
+  height: 428px;
   border-radius: 20px;
   box-shadow: 0 7px 29px 0 rgba(0, 0, 0, 0.25);
   padding: 45px 35px;
 }
-.brands .brands__list .brand .logoimg {
+@media screen and (max-width: 430px) {
+  .brands .brands__list .brand {
+    width: 100%;
+    height: 500px;
+  }
+}
+.brands .brands__list .logoimg {
   justify-self: center;
   width: 254px;
   height: 60px;
   flex-shrink: 0;
   margin: 0 0 30px 12px;
 }
-.brands .brands__list .brand li {
+.brands .brands__list li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -45,7 +95,7 @@
   line-height: normal;
   margin-bottom: 13px;
 }
-.brands .brands__list .brand ul {
+.brands .brands__list ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -54,23 +104,29 @@
   align-items: start;
   justify-content: space-between;
 }
-.brands .brands__list .brand .brand__button {
+.brands .brands__list .brand__button {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.brands .brands__list .brand img {
+.brands .brands__list img {
   justify-self: center;
 }
-.brands .brands__list .brand .wolf__logo {
+.brands .brands__list .wolf__logo {
   width: 220px;
 }
-.brands .brands__list .brand .viking__logo {
+.brands .brands__list .viking__logo {
   position: relative;
   right: 20px;
 }
-.brands .brands__list .brand .dot {
+@media screen and (max-width: 1400px) {
+  .brands .brands__list .brand__subz {
+    grid-column: 1/3;
+    place-self: center;
+  }
+}
+.brands .brands__list .dot {
   margin-right: 10px;
   width: 10px;
   height: 10px;

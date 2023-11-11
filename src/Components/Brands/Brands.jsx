@@ -9,11 +9,13 @@ import listDec  from "../../Images/listDec.svg"
 import Button from "../Button/Button";
 
 import {Modal} from "@mui/material";
+import iconClose from "../../Images/closeIcon.svg";
 import ModalWindow from "../Modal/ModalWindow";
 
 export default function Brands() {
-    const [open,setOpen] = useState(false);
-    const handleOpen = () => setOpen(!open);
+    const [modalOpen,setModalOpen] = useState(false);
+    const handleOpen = () => setModalOpen(true);
+    const handleClose = () => setModalOpen(false);
     return (
         <article className="brands" id="brands">
             <h1 className="brands__title">Brands we work with</h1>
@@ -28,17 +30,9 @@ export default function Brands() {
                     </ul>
                     </article>
                     <span className="brand__button">
-                    <Button property={{
-                        width: "254px",
-                        height: "61px"
-                    }}
-                    handleClick={() => {}}
-                    >
-                        <h2>Book now</h2>
-                    </Button>
-                        <Modal open={true} >
-                            <ModalWindow/>
-                        </Modal>
+                        <ModalWindow>
+                            <h2>Book now</h2>
+                        </ModalWindow>
                     </span>
                 </section>
                 <section className="brand brand__wolf">
@@ -51,12 +45,9 @@ export default function Brands() {
                     </ul>
                     </article>
                     <span className="brand__button">
-                    <Button property={{
-                        width: "254px",
-                        height: "61px"
-                    }}>
-                        <h2>Book now</h2>
-                    </Button>
+                     <ModalWindow>
+                            <h2>Book now</h2>
+                        </ModalWindow>
                     </span>
                 </section>
                 <section className="brand brand__subz">
@@ -68,12 +59,9 @@ export default function Brands() {
                     </ul>
                     </article>
                     <span className="brand__button">
-                    <Button property={{
-                        width: "254px",
-                        height: "61px"
-                    }}>
-                        <h2>Book now</h2>
-                    </Button>
+                    <ModalWindow>
+                            <h2>Book now</h2>
+                    </ModalWindow>
                     </span>
                 </section>
             </article>

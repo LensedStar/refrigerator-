@@ -10,7 +10,7 @@ import iconAdress from "../../Images/contactAdress.svg";
 
 export default function Contact() {
     return(
-        <article className="contact__container" id="#contacts">
+        <article className="contact__container" id="contacts">
             <h1 className="contact__title">Contact us!</h1>
             <article className="contact__form__info">
             <Form />

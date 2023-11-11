@@ -5,13 +5,11 @@ import "./FormModalStyle.scss";
 
 
 export default function FormModal() {
-    //const {register, handleSubmit, errors} = useForm();
-    return
-    (
+    return(
         <form className="form__modal">
             <div className="form__input">
                 <label for="name">Full name</label>
-                <input type="text" id="name" placeholder="Name Surname" {...register("Name",{required:true})}/>
+                <input type="text" id="name" placeholder="Name Surname"/>
             </div>
             <div className="form__input">
                 <label for="mail">Email</label>

@@ -3,6 +3,7 @@ import React from "react";
 import Button from "../Button/Button";
 
 import "./BannerStyle.scss";
+import ModalWindow from "../Modal/ModalWindow";
 
 export default function Banner() {
      return(
@@ -16,9 +17,9 @@ export default function Banner() {
                     </p>
                     </aside>
                  <aside className="banner__button">
-                     <Button>
-                        <h2>Contact us</h2>
-                    </Button>
+                     <ModalWindow>
+                         <h2>Book now</h2>
+                     </ModalWindow>
                  </aside>
              </article>
          </section>

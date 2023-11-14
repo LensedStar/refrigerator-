@@ -36,6 +36,16 @@ header .contacts__header {
   align-items: center;
   justify-content: end;
 }
+@media screen and (max-width: 450px) {
+  header .contacts__header {
+    width: 100%;
+    justify-content: center;
+  }
+  header .contacts__header .head__number {
+    width: fit-content;
+    padding-right: 10px;
+  }
+}
 header .contacts__header .head__number {
   margin-right: 25px;
 }
@@ -83,6 +93,12 @@ header .head__email:hover {
   header .head__number a,
   header .head__email a {
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  header .head__number a,
+  header .head__email a {
+    font-size: 18px;
   }
 }
 

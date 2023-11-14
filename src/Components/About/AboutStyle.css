@@ -123,5 +123,10 @@
     font-size: 17px;
   }
 }
+@media screen and (max-width: 369px) {
+  .about__container .about__description__container p {
+    font-size: 15px;
+  }
+}
 
 /*# sourceMappingURL=AboutStyle.css.map */

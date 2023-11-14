@@ -16,11 +16,7 @@ export default function Banner() {
                         eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     </aside>
-                 <aside className="banner__button">
-                     <ModalWindow>
-                         <h2>Book now</h2>
-                     </ModalWindow>
-                 </aside>
+
              </article>
          </section>
      )

@@ -10,15 +10,18 @@
 }
 @media screen and (max-width: 1000px) {
   .banner {
-    justify-content: center;
     background-position: center;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px 12px;
   }
 }
 @media screen and (max-width: 650px) {
   .banner {
-    padding: 150px 12px;
-    height: fit-content;
-    justify-content: center;
+    background: url("../../Images/backgroundmobile-test-4.jpg"), lightgray 10% no-repeat;
+    background-size: cover;
+    height: 800px;
+    background-position: right;
   }
   .banner .banner__description {
     width: 100%;
@@ -37,6 +40,11 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 34px 37px;
+}
+@media screen and (max-width: 1000px) {
+  .banner .banner__description {
+    height: fit-content;
+  }
 }
 .banner .banner__description .banner__description__text {
   display: flex;

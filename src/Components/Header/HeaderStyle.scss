@@ -41,9 +41,20 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: end;
+    @media screen and (max-width:450px) {
+      width: 100%;
+      justify-content: center;
+      .head__number{
+        width: fit-content;
+        padding-right: 10px;
+      }
+    }
+    @media screen and (max-width:450px){
+
+    }
     .head__number{
       margin-right:25px;
-    }
+      }
 
     @media screen and (max-width:450px){
       .head__email{
@@ -85,7 +96,11 @@ header{
           font-size: 10px;
         }
     }
-
+    @media screen and (max-width:450px) {
+      a{
+        font-size: 18px;
+      }
+    }
   }
 
   }

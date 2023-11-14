@@ -12,8 +12,10 @@ export default function Banner() {
                     <aside className="banner__description__text">
                     <h1 className="banner__title">NY Refrigerator repair specialists </h1>
                     <p className="banner__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Fast & Reliable
+                        Refrigerator Repairs - Get Your Cool Back!
+                        Professional Services for Subzero Wolf and Viking kitchen appliances.
+                        Schedule Your Repair Today!
                     </p>
                     </aside>
 

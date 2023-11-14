@@ -9,6 +9,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 500px) {
+    width: 95%;
+  }
   .modal__close{
     width: 18px;
     height: 18px;

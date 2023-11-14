@@ -4,6 +4,11 @@
   align-items: flex-start;
   justify-content: center;
 }
+@media screen and (max-width: 500px) {
+  .form__modal .form__input {
+    width: 100%;
+  }
+}
 .form__modal .form__input input {
   width: 400px;
   height: 45px;
@@ -14,6 +19,11 @@
   padding: 0 20px;
   margin: 0 0 15px 0;
 }
+@media screen and (max-width: 500px) {
+  .form__modal .form__input input {
+    width: 100%;
+  }
+}
 .form__modal .form__input input:focus {
   outline: rgba(102, 153, 204, 0.7) auto 1px;
 }
@@ -23,6 +33,11 @@
   align-items: flex-end;
   justify-content: space-between;
   width: 400px;
+}
+@media screen and (max-width: 500px) {
+  .form__modal .form__input__submit {
+    width: 100%;
+  }
 }
 .form__modal .form__input__submit button {
   border-radius: 10px;
@@ -38,6 +53,11 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+@media screen and (max-width: 500px) {
+  .form__modal .form__input__submit button {
+    width: 80%;
+  }
 }
 .form__modal .form__input__submit button:hover {
   background-color: rgb(12, 173, 34);
@@ -70,6 +90,11 @@
   margin: 0 0 15px 0;
   width: 30%;
   height: 45px;
+}
+@media screen and (max-width: 500px) {
+  .form__modal .form__input__test input {
+    width: 80%;
+  }
 }
 .form__modal .form__input__test input:focus {
   outline: rgba(102, 153, 204, 0.7) auto 1px;

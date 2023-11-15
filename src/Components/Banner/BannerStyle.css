@@ -36,7 +36,6 @@
   justify-content: space-between;
   max-width: 557px;
   height: 300px;
-  backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 34px 37px;

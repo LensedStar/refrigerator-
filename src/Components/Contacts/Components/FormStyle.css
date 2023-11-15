@@ -1,30 +1,61 @@
-.form__page {
+gi .done__form {
+  height: 100px;
+  width: 100px;
+}
+
+.form__send {
+  height: 500px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1100px) {
+  .form__send {
+    justify-content: center;
+  }
+}
+.form__send h2 {
+  text-align: center;
+  font-size: 25px;
+}
+.form__send p {
+  font-size: 15px;
+}
+
+.form__page,
+.form__send {
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 1100px) {
-  .form__page {
+  .form__page,
+  .form__send {
     justify-content: center;
     align-items: center;
   }
 }
 @media screen and (max-width: 500px) {
-  .form__page {
+  .form__page,
+  .form__send {
     width: 100%;
   }
 }
-.form__page .form__input {
+.form__page .form__input,
+.form__send .form__input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 @media screen and (max-width: 500px) {
-  .form__page .form__input {
+  .form__page .form__input,
+  .form__send .form__input {
     width: 100%;
   }
 }
-.form__page .form__input input, .form__page .form__input #message {
+.form__page .form__input input, .form__page .form__input #message,
+.form__send .form__input input,
+.form__send .form__input #message {
   width: 500px;
   height: 45px;
   border-radius: 10px;
@@ -35,26 +66,33 @@
   margin: 0 0 25px 0;
 }
 @media screen and (max-width: 500px) {
-  .form__page .form__input input, .form__page .form__input #message {
+  .form__page .form__input input, .form__page .form__input #message,
+  .form__send .form__input input,
+  .form__send .form__input #message {
     width: 100%;
   }
 }
-.form__page .form__input input:focus, .form__page .form__input #message:focus {
+.form__page .form__input input:focus, .form__page .form__input #message:focus,
+.form__send .form__input input:focus,
+.form__send .form__input #message:focus {
   outline: rgba(102, 153, 204, 0.7) auto 1px;
 }
-.form__page .form__input #message {
+.form__page .form__input #message,
+.form__send .form__input #message {
   height: 120px;
   resize: none;
   padding-top: 10px;
 }
-.form__page .form__input label {
+.form__page .form__input label,
+.form__send .form__input label {
   margin: 0 0 8px 10px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.form__page .form__input__submit {
+.form__page .form__input__submit,
+.form__send .form__input__submit {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -62,7 +100,8 @@
   max-width: 500px;
   width: 100%;
 }
-.form__page .form__input__submit button {
+.form__page .form__input__submit button,
+.form__send .form__input__submit button {
   border-radius: 10px;
   border: none;
   box-shadow: 0px 7px 27px 0px rgba(0, 0, 0, 0.25);
@@ -77,29 +116,34 @@
   font-weight: 600;
   line-height: normal;
 }
-.form__page .form__input__submit button:hover {
+.form__page .form__input__submit button:hover,
+.form__send .form__input__submit button:hover {
   background-color: rgb(12, 173, 34);
   outline: 1px black solid;
   cursor: pointer;
 }
-.form__page .form__input__submit button:active {
+.form__page .form__input__submit button:active,
+.form__send .form__input__submit button:active {
   transform: scale(1.01);
 }
-.form__page .form__input__test {
+.form__page .form__input__test,
+.form__send .form__input__test {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
 }
-.form__page .form__input__test label {
+.form__page .form__input__test label,
+.form__send .form__input__test label {
   margin: 0 0 8px 10px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.form__page .form__input__test input {
+.form__page .form__input__test input,
+.form__send .form__input__test input {
   border-radius: 10px;
   border: none;
   background: #FFF;
@@ -109,7 +153,8 @@
   width: 50%;
   height: 45px;
 }
-.form__page .form__input__test input:focus {
+.form__page .form__input__test input:focus,
+.form__send .form__input__test input:focus {
   outline: rgba(102, 153, 204, 0.7) auto 1px;
 }
 

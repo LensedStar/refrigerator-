@@ -1,13 +1,45 @@
-import React from "react";
+import React,{useState} from "react";
 import "./FormModalStyle.scss";
 import {ErrorMessage} from "@hookform/error-message";
 import {useForm} from "react-hook-form";
 
+import {motion} from "framer-motion";
+import {AnimatePresence} from "framer-motion";
+import done from "../../../Images/doneFormIcon.svg"
+
 export default function FormModal() {
+    const [send, setSend] = useState(false)
     const { register, formState:{ errors}, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data)
+    const onSubmit = data =>{
+        setSend(true)
+        console.log(data)
+    }
     return(
-        <form className="form__modal" onSubmit={handleSubmit(onSubmit)}>
+        <AnimatePresence mode="wait">
+        { send ?
+            <motion.div
+                className="form__send__modal"
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{
+                    duration: 0.5,
+                }}
+            >
+                <img className="done__form" src={done} alt="done icon"/>
+                <h2>Thank you for your request</h2>
+                <p>We will contact you as soon as possible</p>
+            </motion.div>
+            :
+            <motion.form
+                className="form__modal"
+                onSubmit={handleSubmit(onSubmit)}
+                key="form"
+                initial={{opacity:1 , y:0}}
+                exit={{opacity:0 , y:-500}}
+                transition={{
+                    duration: 0.5,
+                }}
+            >
             <div className="form__input">
                 <label>Full name</label>
                 <input type="text" id="name" placeholder="Name Surname" {...register("name",{
@@ -46,6 +78,8 @@ export default function FormModal() {
                     </span>
                 <button className="submit-button" type="submit">Send</button>
             </div>
-        </form>
+        </motion.form>
+        }
+        </AnimatePresence>
     )
 }

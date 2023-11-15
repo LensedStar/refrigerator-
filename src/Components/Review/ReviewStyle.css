@@ -144,5 +144,9 @@
   cursor: pointer;
   transform: scale(1.05);
 }
+.reviews__buttons .reviews__button img {
+  width: 50px;
+  height: 80px;
+}
 
 /*# sourceMappingURL=ReviewStyle.css.map */

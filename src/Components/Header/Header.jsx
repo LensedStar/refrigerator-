@@ -4,7 +4,7 @@ import "./HeaderStyle.scss";
 
 import mailLogo from "../../Images/mailHeaderIcon.svg";
 import phoneLogo from "../../Images/phoneHeaderIcon.svg";
-import menu from "../../Images/menu.png";
+import menu from "../../Images/menu.svg";
 import close from  "../../Images/closeIcon.svg"
 
 import {Drawer} from "@mui/material";
@@ -23,7 +23,7 @@ export default function Header() {
             :
             <>
                 <button className="nav__menu" onClick={()=>setOpen(true)}>
-                    <img src={menu} alt="open side menu"/>
+                    <img src={menu} className="header__menu" alt="open side menu"/>
                 </button>
                 <Drawer
                     open={open}

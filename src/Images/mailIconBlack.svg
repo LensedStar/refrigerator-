@@ -1,9 +1,7 @@
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="50" height="50" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_126_32" transform="scale(0.02)"/>
-</pattern>
-<image id="image0_126_32" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADMElEQVR4nO2ZS2hUMRSGP2sdLWqxBR/1AUUQBetChIIgPltEFKE+Ni5cCkqhS3e2XXdV3CgIPjaVboqIVaS6sFVQutCNYFttUUSs9YkVH9UrgRM5ZHLHGZ2ZOwP5ITA3+XNy/uTkJPcOBAQEBAQkjCqgExgDZoCoRMuM+NghPqeJuFcCTkY5liFgnhbSKQ3jwG7gvCJfB+pIDnXig/Xngvg4Ic/tmvxUKrepugPAG6mfAg4VXwMHZexIfDHPFjukfkR3sHuixjG0DOhXs3ERqC6CgGqZeTtuvycqatSe+QPb4RxQ4XSYBRwHpoUz4axcvrFVQjySMU+IDxoV4qv1O02IKQPACs8Aq2VzGc4voBuYm0cBcyQT2eh4AKz18JYC1xyf04RMqnhs8RiplMTwQ3gPgYY8iGgQW5HY7pSxXLSofTuZScgS4Kp6vgQs8BhsBJ4I5ytw0hOS2cCEzDEVts+ALR5elUSA9esmsDyTEGu8VdWNiOMu5gNnJMwM7zawKgcRhntLhaqxZWy6aBQfrD+tas9kFOLW2eU28TvbM5DJ6S+F91Fm+G84DLyVPq+B/R5OBdAGfIvbD7kK6QJ+yu9BoN4z6GKgT/W5DNR6eLXSZnl90tdFvYwVydhd+RBisBN4kcWsm5l+L7xXwF7V1qRsTMtsx9l4p2zsydLHrElmNntVfQ+wKMs03a320pBwXBhbPcp+r7OqeRPim/XnwPYs4zvTPtusrkmfYlY870JsDN9xZj3l4W0AHgGPgU2e9krnELwPrIkZsyBCrBPt6nAcBtbFnAFp7w3CHVarZWz5DsGCC/Hl+S8SUu7dyMVR4LP0GY85BIsuxGAhcFb1uRHzDmNS7RVnQ/sSRmJC9DvMlDro9qm2ZnVwfgCO5Gg7KqYQg5Vyg7aJ4LQUm34HhEOpC0H2SJtcKK2d75Kh/uVymZgQi/Uq/W78T1tRkkIypd+yE5IvREEIYUUKgiiEFiG0kgutGalIldGKpHyfTMekcleGjkkjcvxp9n3E7lDfdZuU2lIUkhIR9m+FU5pkrhB3FblcyqD7Rw9SYV43R8vgr7dRWYk0EQEBAQEBFBO/ARmhVo+ExgPLAAAAAElFTkSuQmCC"/>
-</defs>
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <path d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12Z" stroke="#000000" stroke-width="1.5"/> <path d="M6 8L8.1589 9.79908C9.99553 11.3296 10.9139 12.0949 12 12.0949C13.0861 12.0949 14.0045 11.3296 15.8411 9.79908L18 8" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/> </g>
+</svg>

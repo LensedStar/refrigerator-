@@ -1,9 +1,7 @@
-<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect y="0.881592" width="13.4751" height="10.3885" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_24_12" transform="matrix(0.0625 0 0 0.0810698 0 -0.148558)"/>
-</pattern>
-<image id="image0_24_12" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRAAAAAAAAPlDu38AAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfnCwEMBx0tpNSUAAABt0lEQVRIx2NgGOmAkVQN7murHhzqk5T818y0knmhoSHjJ6at/43+/2fpYDz4e97589vCGhkdGV+8oJoDnOKqHY9LS0uzNDBN/jt92jSGdQzqDNd8fRl2MTQx2DDC9f/vZvjF0PHvH2MaQxij/qZN/7YyGf0vyM7eI9LIaCP67BnJDoBbfIep6t/f48cZeBgO/V8jK0t0UH1hsGMMefz43yYml/+XLSxwOYQJl364j0m1GAag+pg2/eNntJoyBZcyDAe4vKn/f+S1lBQ8qCkE/40ZMv+r+/t7rar/v/+/hARBBzCZ/bdnKNPXR49jcgFjKQMbQwUT06/r/43Y/fX1CTqA8dc/4/86//9TajGGub//qf3XxTQXMw1M/Jf/n/HiRViqptRimDmseswrfrVcukTQATuD2xTsip4/h2Unir2uxNDHoLV+Pa7yAWcugOVjWHYi2WIXhlUMgo8eMe36e/ufRG4uLmU4HQDLt7B8zBDBMJExcf16XFEDE//vxuDFwLVuHaPy353/dlpYwEIUlz0kp3JYdvpb9LeIpc/AACb+e82/v6ynz5/fZ9E2yWLFy5ckh9iIBQC4ptBtgMQ7ngAAAABJRU5ErkJggg=="/>
-</defs>
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 15 15" version="1.1" id="circle-stroked" xmlns="http://www.w3.org/2000/svg" fill="#6699CC">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <path id="path8564-5-6-4" d="M7.5,0C11.6422,0,15,3.3578,15,7.5S11.6422,15,7.5,15&#10;&#9;S0,11.6422,0,7.5S3.3578,0,7.5,0z M7.5,1.6666c-3.2217,0-5.8333,2.6117-5.8333,5.8334S4.2783,13.3334,7.5,13.3334&#10;&#9;s5.8333-2.6117,5.8333-5.8334S10.7217,1.6666,7.5,1.6666z"/> </g>
+</svg>

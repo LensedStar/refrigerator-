@@ -129,4 +129,9 @@ header .head__email:hover {
   align-self: flex-end;
 }
 
+.header__menu {
+  width: 30px;
+  height: 40px;
+}
+
 /*# sourceMappingURL=HeaderStyle.css.map */

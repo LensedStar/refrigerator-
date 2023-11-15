@@ -4,9 +4,9 @@ import "./ContactStyle.scss";
 
 import Form from "./Components/Form";
 
-import iconPhone from "../../Images/contactPhone.svg";
-import iconMail from "../../Images/contactMail.svg";
-import iconAdress from "../../Images/contactAdress.svg";
+import iconPhone from "../../Images/phoneHeaderIcon.svg";
+import iconMail from "../../Images/mailHeaderIcon.svg";
+import iconAdress from "../../Images/mailIcon.svg";
 
 export default function Contact() {
     return(

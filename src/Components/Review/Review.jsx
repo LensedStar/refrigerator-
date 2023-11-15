@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./ReviewStyle.scss";
 import comments from "./comments";
-import arrow from "../../Images/arrowReview.svg"
+import arrow from "../../Images/arrowNext.svg"
 
 
 
@@ -90,9 +90,9 @@ export default function Reviews() {
             </section>
                 <section className="reviews__buttons">
                     <button className="reviews__button" onClick={()=>handleCommentIdMinus()}>
-                        <img src={arrow} alt="arrow to last slide" /><p>Prev</p></button>
+                        <img src={arrow} alt="arrow to last slide" style={{transform:"rotate(180deg)"}} /><p>Prev</p></button>
                     <button className="reviews__button" onClick={()=>handleCommentIdPlus()}>
-                       <p>Next</p> <img src={arrow} alt="arrow to next slide" style={{transform:"rotate(180deg)"}}/></button>
+                       <p>Next</p> <img src={arrow} alt="arrow to next slide" /></button>
                 </section>
             </section>
         </div>

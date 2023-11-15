@@ -20,8 +20,8 @@ export default function Form() {
             <AnimatePresence mode="wait">
             {send ? <motion.div
                     className="form__send"
-                    initial={{y:500}}
-                    animate={{y:0}}
+                    initial={{opacity:0}}
+                    animate={{opacity:1}}
                     transition={{
                         duration: 0.5,
                     }}

@@ -62,7 +62,7 @@ header .head__email {
   justify-content: flex-start;
   padding: 2px;
   background-color: rgba(11, 153, 29, 0.2);
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 7px 0;
   border: solid 1px rgb(11, 153, 29);
   width: 220px;
@@ -79,6 +79,8 @@ header .head__number img,
 header .head__email img {
   position: relative;
   right: 4px;
+  width: 36px;
+  height: 26px;
 }
 header .head__number:hover,
 header .head__email:hover {

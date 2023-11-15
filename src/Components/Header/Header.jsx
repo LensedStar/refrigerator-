@@ -2,8 +2,8 @@ import React,{useState} from "react";
 
 import "./HeaderStyle.scss";
 
-import mailLogo from "../../Images/emailLogo.svg";
-import phoneLogo from "../../Images/phoneLogo.svg";
+import mailLogo from "../../Images/mailHeaderIcon.svg";
+import phoneLogo from "../../Images/phoneHeaderIcon.svg";
 import menu from "../../Images/menu.png";
 import close from  "../../Images/closeIcon.svg"
 

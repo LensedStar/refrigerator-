@@ -15,7 +15,6 @@ export default function Banner() {
                         Fast & Reliable
                         Refrigerator Repairs - Get Your Cool Back!
                         Professional Services for Subzero Wolf and Viking kitchen appliances.
-                        Schedule Your Repair Today!
                     </p>
                     </aside>
 

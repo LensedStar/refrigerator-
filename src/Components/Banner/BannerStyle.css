@@ -46,6 +46,11 @@
     height: fit-content;
   }
 }
+@media screen and (max-width: 650px) {
+  .banner .banner__description {
+    background-color: transparent;
+  }
+}
 .banner .banner__description .banner__description__text {
   display: flex;
   flex-direction: column;
@@ -78,12 +83,14 @@
 }
 @media screen and (max-width: 650px) {
   .banner .banner__description .banner__description__text p {
+    color: #FFFFFF;
     width: 100%;
     height: fit-content;
     font-size: 20px;
     flex-wrap: wrap;
   }
   .banner .banner__description .banner__description__text h1 {
+    color: #FFFFFF;
     width: 100%;
     height: fit-content;
     font-size: 25px;

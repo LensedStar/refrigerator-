@@ -45,6 +45,9 @@ $blue:rgba(102,153,204,1);
     @media screen and (max-width: 1000px){
       height: fit-content;
     }
+    @media screen and (max-width: 650px){
+      background-color: transparent;
+    }
     .banner__description__text{
       display: flex;
       flex-direction: column;
@@ -76,12 +79,14 @@ $blue:rgba(102,153,204,1);
     }
       @media  screen and (max-width:650px) {
         p{
+          color:#FFFFFF;
           width: 100%;
           height: fit-content;
           font-size: 20px;
           flex-wrap:wrap;
         }
         h1{
+          color: #FFFFFF;
           width: 100%;
           height: fit-content;
           font-size: 25px;

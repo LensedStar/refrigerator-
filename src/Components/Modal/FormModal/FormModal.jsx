@@ -6,14 +6,25 @@ import {useForm} from "react-hook-form";
 import {motion} from "framer-motion";
 import {AnimatePresence} from "framer-motion";
 import done from "../../../Images/doneFormIcon.svg"
+import apiCall from "../../../APIcall";
+import error from "../../../Images/errorFormIcon.svg";
 
 export default function FormModal() {
     const [send, setSend] = useState(false)
+    const [success, setSuccess] = useState(null)
     const { register, formState:{ errors}, handleSubmit } = useForm();
-    const onSubmit = data =>{
-        setSend(true)
-        console.log(data)
-    }
+    const onSubmit = async (data) =>{
+        try{
+            await apiCall(data)
+            setSuccess(true)
+            setSend(true)
+        }
+        catch (e) {
+            setSuccess(false)
+            setSend(true)
+        }
+    };
+
     return(
         <AnimatePresence mode="wait">
         { send ?
@@ -25,9 +36,9 @@ export default function FormModal() {
                     duration: 0.5,
                 }}
             >
-                <img className="done__form" src={done} alt="done icon"/>
-                <h2>Thank you for your request</h2>
-                <p>We will contact you as soon as possible</p>
+                <img className="done__form" src={ success ? done : error} alt="done icon"/>
+                <h2>{success ? "Thank you for your request" : "Something went wrong!"}</h2>
+                <p>{success ? "We will contact you as soon as possible":"Check your connection or try another way"}</p>
             </motion.div>
             :
             <motion.form

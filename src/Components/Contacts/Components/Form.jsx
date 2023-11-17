@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import "./FormStyle.scss";
 import { useForm } from "react-hook-form";
 import {ErrorMessage} from "@hookform/error-message";
@@ -6,15 +6,28 @@ import {ErrorMessage} from "@hookform/error-message";
 import {motion} from "framer-motion";
 import {AnimatePresence} from "framer-motion";
 
+import apiCall from "../../../APIcall.js"
+
 import done from "../../../Images/doneFormIcon.svg"
+import error from "../../../Images/errorFormIcon.svg"
 
 export default function Form() {
     const [send, setSend] = useState(false)
+    const [success, setSuccess] = useState(null)
     const { register, formState:{ errors}, handleSubmit } = useForm();
-    const onSubmit = data =>{
-        setSend(true)
-        console.log(data)
+    const onSubmit = async (data) =>{
+        try{
+            await apiCall(data)
+            setSuccess(true)
+            setSend(true)
+        }
+        catch (e) {
+            setSuccess(false)
+            setSend(true)
+        }
     };
+
+
     return(
         <>
             <AnimatePresence mode="wait">
@@ -26,9 +39,9 @@ export default function Form() {
                         duration: 0.5,
                     }}
                 >
-                <img className="done__form" src={done} alt="done icon"/>
-                <h2>Thank you for your request</h2>
-                <p>We will contact you as soon as possible</p>
+                <img className="done__form" src={ success ? done : error} alt="done icon"/>
+                <h2>{success ? "Thank you for your request" : "Something went wrong!"}</h2>
+                <p>{success ? "We will contact you as soon as possible":"Check your connection or try another way"}</p>
             </motion.div>
                 :
             <motion.form
@@ -48,7 +61,7 @@ export default function Form() {
                         minLength:{value:4, message:"Full name must be at least 4 characters long"},
                         maxLength:{value:60, message:"Full name must be less than 60 characters long"},
                         pattern:{value:/^[A-Za-z]+\s[A-Za-z]+$/,message:"Name can include only letters"}})}/>
-                    <ErrorMessage errors={errors} name={"name"} render={({message})=><p className="error" >{message}</p>} />
+                    <ErrorMessage errors={errors} name="name" render={({message})=><p className="error" >{message}</p>} />
                 </div>
                 <div className="form__input">
                     <label>Email</label>
@@ -57,7 +70,7 @@ export default function Form() {
                         minLength:{value:4, message:"Email must be at least 4 symbols long"},
                         maxLength:{value:60, message:"Email must be less than 60 characters long"},
                         pattern:{value:/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,message:"Email is invalid"}})}/>
-                    <ErrorMessage errors={errors} name={"mail"} render={({message})=><p className="error" >{message}</p>} />
+                    <ErrorMessage errors={errors} name="mail" render={({message})=><p className="error" >{message}</p>} />
                 </div>
                 <div className="form__input">
                     <label>Phone number</label>
@@ -66,7 +79,7 @@ export default function Form() {
                         minLength:{value:10, message:"Number is to short"},
                         maxLength:{value:14, message:"Number is to long"},
                         pattern:{value:/^(?:\+?1[.-]?)?(?:\d{3}[.-]?)?\d{3}[.-]?\d{4}$/,message:"Phone number is invalid"}})}/>
-                    <ErrorMessage errors={errors} name={"phone"} render={({message})=><p className="error">{message}</p>} />
+                    <ErrorMessage errors={errors} name="phone" render={({message})=><p className="error">{message}</p>} />
                 </div>
                 <div className="form__input">
                     <label>Message(additional)</label>
@@ -74,7 +87,7 @@ export default function Form() {
                         required:false,
                         maxLength:{value:500, message:"Message must be less than 500 characters long"},
                     })}/>
-                    <ErrorMessage errors={errors} name={"text"} render={({message})=><p className="error">{message}</p>} />
+                    <ErrorMessage errors={errors} name="text" render={({message})=><p className="error">{message}</p>} />
                 </div>
                 <div className="form__input__submit">
                     <span className="form__input__test">
@@ -83,7 +96,7 @@ export default function Form() {
                         required:"This field is required",
                         pattern:{value:/^[8]$/,message:"Answer is incorect"}
                     })} />
-                         <ErrorMessage errors={errors} name={"test"} render={({message})=><p className="error error__test">{message}</p>} />
+                         <ErrorMessage errors={errors} name="test" render={({message})=><p className="error error__test">{message}</p>} />
                     </span>
                     <button className="submit-button" type="submit">Send</button>
                 </div>

@@ -90,13 +90,15 @@ $blue:rgba(102,153,204,1);
   align-self: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   transform: scale(-80%) rotate(180deg);
   height: 300px;
   width: 100%;
   position: relative;
   z-index: -1;
   padding-top:10px!important;
+  filter: blur(1.5px);
   @media screen and (max-width: 700px){
     display: none;
   }

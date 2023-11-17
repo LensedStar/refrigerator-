@@ -3,13 +3,13 @@ const comments=[
     {
         id:0,
         name:"John Doe",
-        stars:"1",
+        stars:"4",
         text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
     },
     {
         id:1,
         name:"Amanda Doe",
-        stars:"2",
+        stars:"3",
         text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum." +
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
     },

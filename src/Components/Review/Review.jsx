@@ -3,12 +3,22 @@ import "./ReviewStyle.scss";
 import comments from "./comments";
 import arrow from "../../Images/arrowNext.svg"
 
+import threeStars from "../../Images/three_stars.svg"
+import fourStars from "../../Images/four_stars.svg"
+import fiveStars from "../../Images/five_stars.svg"
 
 
 export default function Reviews() {
     const [commentId, setComentId] = useState(1);
 
-
+            function handleStars(stars) {
+                if(parseInt(stars) === 3){
+                    return <img src={threeStars} alt="three stars"/>
+                }else if(parseInt(stars) === 4){
+                    return <img src={fourStars} alt="four stars"/>
+                }
+                return <img src={fiveStars} alt="five stars"/>
+            }
             function handleCommentIdPlus() {
                 commentId === comments.length - 1 ? setComentId(0) : setComentId(commentId + 1);
             }
@@ -21,17 +31,17 @@ export default function Reviews() {
                     <article className="review__comments">
                         <span className="review__before review">
                             <h2>{comments[comments.length - 1].name}</h2>
-                            <p>{comments[comments.length - 1].stars}</p>
+                            {handleStars(comments[comments.length - 1].stars)}
                             <p>{comments[comments.length - 1].text.length > 5 ? comments[comments.length - 1].text.split(" ").slice(0,5).join(" ")+ "..." : comments[comments.length - 1].text}</p>
                         </span>
                         <span className="review__main review">
                             <h2>{comments[commentId].name}</h2>
-                            <p>{comments[commentId].stars}</p>
+                            {handleStars(comments[commentId].stars)}
                             <p>{comments[commentId].text}</p>
                         </span>
                         <span className="review__after review">
                             <h2>{comments[commentId + 1].name}</h2>
-                            <p>{comments[commentId + 1].stars}</p>
+                            {handleStars(comments[commentId + 1].stars)}
                             <p>{comments[commentId + 1].text.length > 5 ? comments[commentId + 1].text.split(" ").slice(0,5).join(" ")+ "..." : comments[commentId + 1].text}</p>
                         </span>
                     </article>
@@ -42,17 +52,17 @@ export default function Reviews() {
                     <article className="review__comments">
                         <span className="review__before review">
                            <h2>{comments[commentId - 1].name}</h2>
-                            <p>{comments[commentId - 1].stars}</p>
+                            {handleStars(comments[commentId - 1].stars)}
                             <p>{comments[commentId - 1].text.length > 5 ? comments[commentId - 1].text.split(" ").slice(0,5).join(" ")+ "..." : comments[commentId - 1].text}</p>
                         </span>
                         <span className="review__main review">
                             <h2>{comments[commentId].name}</h2>
-                            <p>{comments[commentId].stars}</p>
+                            {handleStars(comments[commentId].stars)}
                             <p>{comments[commentId].text}</p>
                         </span>
                         <span className="review__after review">
                             <h2>{comments[0].name}</h2>
-                            <p>{comments[0].stars}</p>
+                            {handleStars(comments[0].stars)}
                             <p>{comments[0].text.length > 5 ? comments[0].text.split(" ").slice(0,5).join(" ")+ "..." : comments[0].text}</p>
                         </span>
                     </article>
@@ -63,17 +73,17 @@ export default function Reviews() {
                 <article className="review__comments">
                         <span className="review__before review">
                            <h2>{comments[commentId - 1].name}</h2>
-                            <p>{comments[commentId - 1].stars}</p>
+                            {handleStars(comments[commentId - 1].stars)}
                             <p>{comments[commentId - 1].text.length > 5 ? comments[commentId - 1].text.split(" ").slice(0,5).join(" ")+ "..." : comments[commentId - 1].text}</p>
                         </span>
                     <span className="review__main review">
                             <h2>{comments[commentId].name}</h2>
-                            <p>{comments[commentId].stars}</p>
+                            {handleStars(comments[commentId].stars)}
                             <p>{comments[commentId].text}</p>
                         </span>
                     <span className="review__after review">
                           <h2>{comments[commentId + 1].name}</h2>
-                            <p>{comments[commentId + 1].stars}</p>
+                            {handleStars(comments[commentId + 1].stars)}
                             <p>{comments[commentId + 1].text.length > 5 ? comments[commentId + 1].text.split(" ").slice(0,5).join(" ")+ "..." : comments[commentId + 1].text}</p>
                         </span>
                 </article>

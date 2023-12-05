@@ -72,6 +72,7 @@
 @media screen and (max-width: 500px) {
   .contact__form__info .contact__info {
     width: 100%;
+    padding: 40px 15px;
   }
 }
 .contact__form__info .contact__info .contact__adress,

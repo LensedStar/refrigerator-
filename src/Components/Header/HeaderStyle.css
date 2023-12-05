@@ -54,6 +54,9 @@ header .contacts__header .head__number {
     display: none;
   }
 }
+header .head__email {
+  width: 300px !important;
+}
 header .head__number,
 header .head__email {
   display: flex;
@@ -65,7 +68,7 @@ header .head__email {
   border-radius: 10px;
   margin: 7px 0;
   border: solid 1px rgb(11, 153, 29);
-  width: 220px;
+  width: 300px;
 }
 header .head__number a,
 header .head__email a {
@@ -132,6 +135,10 @@ header .head__email:hover {
 .header__menu {
   width: 30px;
   height: 40px;
+}
+
+.nav__link:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=HeaderStyle.css.map */

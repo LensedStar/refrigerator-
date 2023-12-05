@@ -17,11 +17,11 @@ export default function Contact() {
             <aside className="contact__info">
                 <span className="contact__phone">
                     <img src={iconPhone} alt="phone icon"/>
-                    <a href="tel:+1-1234-567-890">+1-123-456-7890</a>
+                    <a href="tel:+1-347-510-2738">+1-347-510-2738</a>
                 </span>
                 <span className="contact__email">
                     <img src={iconMail} alt="mail icon"/>
-                    <a href="mailto:exmaple@mail.com">example@mail.com</a>
+                    <a href="mailto:wolfsubzero.servis@gmail.com">wolfsubzero.servis@gmail.com</a>
                 </span>
                 <span className="contact__adress">
                      <img src={iconAdress} alt="adress icon"/>

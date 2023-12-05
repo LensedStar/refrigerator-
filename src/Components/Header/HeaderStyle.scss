@@ -60,6 +60,10 @@ header{
     }
   }
 
+  .head__email{
+    width: 300px!important;
+  }
+
   .head__number ,
   .head__email{
     display: flex;
@@ -71,7 +75,7 @@ header{
     border-radius: 10px;
     margin:7px 0;
     border: solid 1px $green;
-    width: 220px;
+    width: 300px;
     a{
       color: #FFFFFF;
       &:visited{
@@ -134,4 +138,9 @@ header{
   height: 40px;
 }
 
+.nav__link{
+  &:hover{
+    cursor: pointer;
+  }
+}
 

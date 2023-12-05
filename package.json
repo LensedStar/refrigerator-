@@ -10,7 +10,6 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@hookform/error-message": "^2.0.1",
     "@mui/material": "^5.14.17",
-    "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.2",
@@ -47,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.4"
   }
 }

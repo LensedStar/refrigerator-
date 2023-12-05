@@ -77,8 +77,7 @@ export default function Form() {
                     <input id="number" type="phone" placeholder="+1-123-456-7890" {...register("phone",{
                         required:"This field is required",
                         minLength:{value:10, message:"Number is to short"},
-                        maxLength:{value:14, message:"Number is to long"},
-                        pattern:{value:/^(?:\+?1[.-]?)?(?:\d{3}[.-]?)?\d{3}[.-]?\d{4}$/,message:"Phone number is invalid"}})}/>
+                        maxLength:{value:14, message:"Number is to long"},})}/>
                     <ErrorMessage errors={errors} name="phone" render={({message})=><p className="error">{message}</p>} />
                 </div>
                 <div className="form__input">

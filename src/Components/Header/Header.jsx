@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import {Link} from "react-scroll";
 
 import "./HeaderStyle.scss";
 
@@ -16,9 +17,9 @@ export default function Header() {
     <header className="header">
         { window.innerWidth > 1000 ?
        <nav className="navigation">
-            <a href="#brands" className="nav__link">Brands</a>
-            <a href="#about" className="nav__link">About</a>
-            <a href="#contacts" className="nav__link">Contact</a>
+            <Link to="brands" smooth duration={500} className="nav__link">Brands</Link>
+            <Link to="about" smooth duration={500} className="nav__link">About</Link>
+            <Link to="contacts" smooth duration={500} className="nav__link">Contact</Link>
         </nav>
             :
             <>
@@ -33,9 +34,9 @@ export default function Header() {
 
                     <nav className="navigation__menu">
                         <img className="menu__close" src={close} alt="close menu bar icon" role="button" onClick={()=>handleClose()} />
-                        <a onClick={()=>handleClose()} href="#brands" className="nav__link">Brands</a>
-                        <a onClick={()=>handleClose()} href="#about" className="nav__link">About</a>
-                        <a onClick={()=>handleClose()} href="#contacts" className="nav__link">Contact</a>
+                        <Link to="brands" smooth duration={500} className="nav__link" onClick={()=>handleClose()}>Brands</Link>
+                        <Link to="about" smooth duration={500} className="nav__link" onClick={()=>handleClose()}>About</Link>
+                        <Link to="contacts" smooth duration={500} className="nav__link" onClick={()=>handleClose()}>Contact</Link>
                     </nav>
                 </Drawer>
             </>
@@ -43,11 +44,11 @@ export default function Header() {
         <aside className="contacts__header">
             <article className="head__number">
                 <img src={phoneLogo} alt="phone"/>
-                <a href="tel:+1123456789">+1-123-456-789-456</a>
+                <a href="tel:+1123456789">+1-347-510-2738</a>
             </article>
             <article className="head__email">
                 <img src={mailLogo} alt="mail"/>
-                <a href="mailto:example@gmail.com">example@gmail.com</a>
+                <a href="mailto:wolfsubzero.servis@gmail.com">wolfsubzero.servis@gmail.com</a>
             </article>
         </aside>
     </header>

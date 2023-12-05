@@ -75,7 +75,7 @@ export default function FormModal() {
                     required:"This field is required",
                     minLength:{value:10, message:"Number is to short"},
                     maxLength:{value:14, message:"Number is to long"},
-                    pattern:{value:/^(?:\+?1[.-]?)?(?:\d{3}[.-]?)?\d{3}[.-]?\d{4}$/,message:"Phone number is invalid"}})}/>
+                })}/>
                 <ErrorMessage errors={errors} name={"phone"} render={({message})=><p className="error">{message}</p>} />
             </div>
             <div className="form__input__submit">

@@ -21,11 +21,7 @@ export default function Contact() {
                 </span>
                 <span className="contact__email">
                     <img src={iconMail} alt="mail icon"/>
-                    <a href="mailto:wolfsubzero.servis@gmail.com">wolfsubzero.servis@gmail.com</a>
-                </span>
-                <span className="contact__adress">
-                     <img src={iconAdress} alt="adress icon"/>
-                    <a href="https://maps.app.goo.gl/aKqH3yqHnTAPawQd9" >39 Lispenard St, 5 Floor, New York, NY 10013</a>
+                    <a href="mailto:vikingsubzero.service@gmail.com">vikingsubzero.service@gmail.com</a>
                 </span>
             </aside>
             </article>

@@ -45,7 +45,7 @@ export default function ModalWindow({children}) {
                 </span>
                 <span className="modal__mail">
                     <img src={iconM} alt="mail logo"/>
-                    <a href="mailto:example@mail.com">+1-123-456-7890</a>
+                    <a href="mailto:vikingsubzero.service@gmail.com">vikingsubzero.service@gmail.com</a>
                 </span>
             </div>
         </article>

@@ -8,9 +8,8 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer__container">
                 <h1> Contact us !</h1>
-                <p>39 Lispenard St, 5 Floor, New York, NY 10013</p>
-                <p> +1-917-260-9536</p>
-                <p>support@quickfrostappliancerepair.com</p>
+                <p>+1-347-510-2738</p>
+                <p>vikingsubzero.service@gmail.com</p>
             </div>
         </footer>
     )

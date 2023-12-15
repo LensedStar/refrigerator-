@@ -48,7 +48,7 @@ export default function Header() {
             </article>
             <article className="head__email">
                 <img src={mailLogo} alt="mail"/>
-                <a href="mailto:wolfsubzero.servis@gmail.com">wolfsubzero.servis@gmail.com</a>
+                <a href="mailto:vikingsubzero.service@gmail.com">vikingsubzero.service@gmail.com</a>
             </article>
         </aside>
     </header>

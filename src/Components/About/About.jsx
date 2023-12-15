@@ -12,7 +12,7 @@ export default function About() {
                 <div className="about__description__container">
                 <p className="about__text">
                     With a distinguished track record for delivering exceptional refrigerator repair services, our team of expert technicians is well-equipped to handle issues in any make or model with precision and expertise. We remain committed to staying at the forefront of industry trends, ensuring you receive the latest and most cutting-edge solutions.
-                    When you choose [Your Company Name], you're opting for a proven and professional solution, backed by a history of excellence and the satisfaction of countless customers who have experienced our superior service
+                    When you choose Viking Sub-Zero service, you're opting for a proven and professional solution, backed by a history of excellence and the satisfaction of countless customers who have experienced our superior service
                 </p>
                 </div>
                 <img className="abot__image" src={AboutPhoto} alt="photo of repair"/>

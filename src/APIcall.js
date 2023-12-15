@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const BotAPI ={
-    BOTTOKEN:"6567725268:AAHLZGke7cXwm_YG08lZSlAfc3bgtUBKdP0",
-    CHANNELID:"-1001994622998",
+    BOTTOKEN:"hiden",
+    CHANNELID:"hiden",
 }
 async function apiCall(data){
     console.log(data)
